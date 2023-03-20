@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "calculator">
+            <input type="text" id="input" placeholder="0" style = "color:#0b91f0" disabled = "true">
+            <br>
+            <button class = "calcbutton" onclick = "calcclick('1')">1</button>
+            <button class = "calcbutton" onclick = "calcclick('2')">2</button>
+            <button class = "calcbutton" onclick = "calcclick('3')">3</button>
+            <button class = "calcbutton" style = "background-color:#ffc15c" onclick = "calcclick('*')">*</button>
+            <br>
+            <button class = "calcbutton" onclick = "calcclick('4')">4</button>
+            <button class = "calcbutton" onclick = "calcclick('5')">5</button>
+            <button class = "calcbutton" onclick = "calcclick('6')">6</button>
+            <button class = "calcbutton" style = "background-color:#ffc15c" onclick = "calcclick('/')">/</button>
+            <br>
+            <button class = "calcbutton" onclick = "calcclick('7')">7</button>
+            <button class = "calcbutton" onclick = "calcclick('8')">8</button>
+            <button class = "calcbutton" onclick = "calcclick('9')">9</button>
+            <button class = "calcbutton" style = "background-color:#ffc15c" onclick = "calcclick('+')">+</button>
+            <br>
+            <button class = "calcbutton" onclick = "calcclick('0')">0</button>
+            <button class = "calcbutton" onclick = "calcclick('.')">.</button>
+            <button class = "calcbutton" style = "background-color:#fccc7f" onclick = "undo()">U</button>
+            <button class = "calcbutton" style = "background-color:#ffc15c" onclick = "calcclick('-')">-</button>
+            <br>
+            <button class = "calcbutton" style = "background-color:#ffc15c" onclick = "calcclick('(')">(</button>
+            <button class = "calcbutton" style = "background-color:#ffc15c" onclick = "calcclick(')')">)</button>
+            <button class = "calcbutton" style = "background-color:#ffc15c" onclick = "calcclick('%')">%</button>
+            <button class = "calcbutton" style = "background-color:#dd8a05" onclick = "clear_field()">C</button>
+            <br>
+            <button class = "bigcalcbutton" onclick= "count()">=</button>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
